@@ -82,7 +82,7 @@ public class GameServiceImpl implements GameService {
     public GameStats retrieveStatsForUser(final Long userId) {
         int score = scoreCardRepository.getTotalScoreFromUser(userId);
         List<BadgeCard> badgeCards = badgeCardRepository.findByUserIdOrderByBadgeTimestampDesc(userId);
-        return new GameStats(userId, score, badgeCards.stream().map(BadgeCard::getBadge).collect(Collectors.toList());
+        return new GameStats(userId, score, badgeCards.stream().map(BadgeCard::getBadge).collect(Collectors.toList()));
     }
 
     private Optional<BadgeCard> checkAndGiveBadgeBasedOnScore(final List<BadgeCard> badgeCards, final Badge badge, final int score,

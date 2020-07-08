@@ -6,5 +6,7 @@ public enum Badge {
     SILVER_MULTIPLICATOR,
     GOLD_MULTIPLICATOR,
     FIRST_ATTEMPT,
-    FIRST_ROW    
+    FIRST_WON,
+    LUCKY_NUMBER
+  
 }
