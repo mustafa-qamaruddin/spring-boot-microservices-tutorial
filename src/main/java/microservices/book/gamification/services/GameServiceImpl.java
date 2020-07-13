@@ -122,4 +122,9 @@ public class GameServiceImpl implements GameService {
         log.info("User with id {} won a new badge: {}", userId, badge);
         return badgeCard;
     }
+
+    @Override
+    public ScoreCard getScoreForAttempt(final Long attemptId) {
+        return scoreCardRepository.findByAttemptId(attemptId);
+    }
 }
