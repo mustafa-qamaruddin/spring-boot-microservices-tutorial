@@ -94,7 +94,7 @@
 			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
 		</dependency>
  
-	</dependencies>
+ </dependencies>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
